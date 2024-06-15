@@ -14,6 +14,7 @@ app.get("/non-blocking", (req, res) => {
 })
 
 
+// worker creation
 const THREAD_COUNT = 4
 function createWorker() {
     return new Promise((resolve, reject) => {
